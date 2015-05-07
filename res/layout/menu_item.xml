@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/menu_height" >
+
+    <!-- 此根布局不可缺少，否则菜单显示异常 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_height"
+        android:background="@drawable/btn_menu_item_selector_bg" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <ImageView
+                android:id="@+id/id_menu_img"
+                android:layout_width="@dimen/menu_img_size"
+                android:layout_height="@dimen/menu_img_size"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_menu_refresh" />
+
+            <TextView
+                android:id="@+id/id_menu_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_menu_img"
+                android:layout_marginTop="@dimen/text_top_margin"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="menu_refresh"
+                android:textColor="@color/menu_text_color"
+                android:textSize="@dimen/menu_text_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

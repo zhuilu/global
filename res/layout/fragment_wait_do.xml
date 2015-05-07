@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.creaway.showicon.activity.waitdo.WaitDoActivity$PlaceholderFragment" >
+
+    <ListView
+        android:id="@+id/task_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cccc"
+        android:divider="@android:color/white"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+</RelativeLayout>

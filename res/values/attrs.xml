@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="UIButton">
+        <attr name="background_pressed" format="reference|color" />
+    </declare-styleable>
+    <declare-styleable name="tableView">
+
+        <!-- table位置 normal|top|bottom|center 默认normal(只有一行) -->
+        <attr name="tableType">
+            <flag name="normal" value="0x10" />
+            <flag name="top" value="0x11" />
+            <flag name="bottom" value="0x12" />
+            <flag name="center" value="0x13" />
+        </attr>
+        <!-- table 显示箭头 true|false 默认 true -->
+        <attr name="show_arrow" format="boolean" />
+        <!-- table 左侧文字 -->
+        <attr name="left_text" format="string|reference" />
+        <!-- table 左侧文字2 -->
+        <attr name="left_text_2" format="string|reference" />
+        <!-- table 左侧文字3 -->
+        <attr name="left_text_3" format="string|reference" />
+
+        <!-- table 左侧图片 -->
+        <attr name="left_image" format="reference" />
+
+        <!-- 左边图片宽高 -->
+        <attr name="left_imageWidth" format="dimension|reference" />
+        <attr name="left_imageHeight" format="dimension|reference" />
+
+        <!-- 是否为大图标 -->
+        <attr name="left_largeSize" format="boolean" />
+
+        <!-- 右侧文字 -->
+        <attr name="right_text" format="string|reference" />
+
+        <!-- table 右侧图片 -->
+        <attr name="right_image" format="reference" />
+        <!-- 右侧toggleButton true|false 默认false -->
+        <attr name="show_togglebutton" format="boolean" />
+
+        <!-- 点击时背景色是否改变 true|false 默认true -->
+        <attr name="change_backgroud" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="framework_keyboardEditText">
+        <attr name="framework_keyboardEdittext_keyboardId" format="reference" />
+    </declare-styleable>
+
+    <attr name="framework_pullrefresh_indicator_upDrawable" format="reference" />
+    <attr name="framework_pullrefresh_indicator_downDrawable" format="reference" />
+    <attr name="framework_pullrefresh_textColor" format="reference|color" />
+    <attr name="framework_pullrefresh_progressDrawable" format="reference" />
+
+    <declare-styleable name="framework_pullrefresh_overview">
+        <attr name="framework_pullrefresh_indicator_upDrawable" />
+        <attr name="framework_pullrefresh_indicator_downDrawable" />
+        <attr name="framework_pullrefresh_textColor" />
+        <attr name="framework_pullrefresh_progressDrawable" />
+    </declare-styleable>
+
+    <attr name="framework_default_pullrefresh_style" format="reference" />
+
+    <declare-styleable name="genericInputBox">
+
+        <!-- 输入内容名称 -->
+        <attr name="inputName" format="string|reference" />
+        <!-- 名称字体大小 -->
+        <attr name="inputNameTextSize" format="dimension" />
+        <!-- 输入内容字体大小 -->
+        <attr name="inputTextSize" format="dimension" />
+        <!-- 输入内容颜色 -->
+        <attr name="inputTextColor" format="color|reference" />
+        <!-- 组合输入框中EditText控件id,暂时不可用 -->
+        <attr name="inputId" format="integer|reference" />
+        <!-- 输入内容之后输入框右侧显示的图片按钮 ,如搜索框输入内容后，右侧显示放大镜。暂时不适用 -->
+        <attr name="funcBtnBg" format="integer|reference" />
+        <!-- 是否不显示右侧输入内容后的图片 -->
+        <attr name="funcBtnVisiable" format="boolean" />
+        <!-- 右侧图片按钮一直显示,暂时不适用 -->
+        <attr name="isAlwayHide" format="boolean" />
+        <!-- 输入框提示内容 -->
+        <attr name="inputHint" format="string|reference" />
+        <!-- 提示内容颜色 -->
+        <attr name="inputHintTextColor" format="color|reference" />
+        <!-- 输入内容最大长度 -->
+        <attr name="maxLength" format="integer" />
+        <!-- 是否只能输入两个小数的数字 配合inputType -->
+        <attr name="isAlipayMoney" format="boolean" />
+        <!-- 输入内容类型 普通/数字/小树数字/密码 -->
+        <attr name="inputType">
+            <flag name="textNormal" value="0x1" />
+            <flag name="textNumber" value="0x2" />
+            <flag name="textDecimal" value="0x2002" />
+            <flag name="textPassword" value="0x81" />
+        </attr>
+        <!-- 输入框最后是否显示单位,兼容老客户端，新版本控件不可用 -->
+        <attr name="inputUnit" format="string|reference" />
+        <!-- 控件尾部的ImageBut mton背景 -->
+        <attr name="extraImgButtonBg" format="color|reference" />
+        <!-- 位数分隔 -->
+        <attr name="separateList" format="string" />
+        <!-- 是否粗体 -->
+        <attr name="isBold" format="boolean" />
+
+        <!-- 控件位置，用于组 -->
+        <attr name="bgType">
+            <flag name="top" value="0x1" />
+            <flag name="center" value="0x2" />
+            <flag name="bottom" value="0x3" />
+            <flag name="normal" value="0x4" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="TwoTextView">
+
+        <!-- 左边文本内容 -->
+        <attr name="ttLeftText" format="string|reference" />
+        <!-- 右边文本内容 -->
+        <attr name="ttRightText" format="string|reference" />
+        <!-- 左边文本字体大小 -->
+        <attr name="ttLeftTextSize" format="dimension" />
+        <!-- 右边文本字体大小 -->
+        <attr name="ttRightTextSize" format="dimension" />
+        <!-- 左边文本颜色 -->
+        <attr name="ttLeftTextColor" format="color|reference" />
+        <!-- 右边文本颜色 -->
+        <attr name="ttRightTextColor" format="color|reference" />
+    </declare-styleable>
+
+    <!-- BankCardListItemView -->
+    <declare-styleable name="BankCardListItemView">
+
+        <!-- table位置 normal|top|bottom|center 默认normal(只有一行) -->
+        <attr name="BCLI_tableType">
+            <flag name="normal" value="0x10" />
+            <flag name="top" value="0x11" />
+            <flag name="bottom" value="0x12" />
+            <flag name="center" value="0x13" />
+        </attr>
+        <!-- table 显示箭头 true|false 默认 true -->
+        <attr name="BCLI_show_arrow" format="boolean" />
+        <!-- table 左侧文字 -->
+        <attr name="BCLI_left_text" format="string|reference" />
+        <!-- table 左侧文字2 -->
+        <attr name="BCLI_left_text_2" format="string|reference" />
+        <!-- table 左侧文字3 -->
+        <attr name="BCLI_left_text_3" format="string|reference" />
+        <!-- table 左侧文字4 -->
+        <attr name="BCLI_left_text_4" format="string|reference" />
+        <!-- table 左侧图片 -->
+        <attr name="BCLI_left_image" format="reference" />
+        <!-- table 右下图片 -->
+        <attr name="BCLI_right_bottom_image" format="reference" />
+        <!-- 右上文字 -->
+        <attr name="BCLI_right_top_text" format="string|reference" />
+        <!-- table 右侧图片 -->
+        <attr name="BCLI_right_image" format="reference" />
+        <!-- 右侧toggleButton true|false 默认false -->
+        <attr name="BCLI_show_togglebutton" format="boolean" />
+        <!-- 点击时背景色是否改变 true|false 默认true -->
+        <attr name="BCLI_change_backgroud" format="boolean" />
+    </declare-styleable>
+
+    <!-- RepaymentStatusView -->
+    <declare-styleable name="RepaymentStatusView">
+
+        <!-- table位置 normal|top|bottom|center 默认normal(只有一行) -->
+        <attr name="RS_tableType">
+            <flag name="normal" value="0x10" />
+            <flag name="top" value="0x11" />
+            <flag name="bottom" value="0x12" />
+            <flag name="center" value="0x13" />
+        </attr>
+        <!-- table 显示箭头 true|false 默认 true -->
+        <attr name="RS_show_arrow" format="boolean" />
+        <!-- table 左侧文字 -->
+        <attr name="RS_left_text" format="string|reference" />
+        <!-- table 左侧文字2 -->
+        <attr name="RS_left_text_2" format="string|reference" />
+        <!-- 右侧文字1 -->
+        <attr name="RS_right_text" format="string|reference" />
+        <!-- 右侧文字2 -->
+        <attr name="RS_right_text_2" format="string|reference" />
+        <!-- 右侧文字3 -->
+        <attr name="RS_right_text_3" format="string|reference" />
+        <!-- 右侧toggleButton true|false 默认false -->
+        <attr name="RS_show_togglebutton" format="boolean" />
+        <!-- 点击时背景色是否改变 true|false 默认true -->
+        <attr name="RS_change_backgroud" format="boolean" />
+    </declare-styleable>
+    <!-- TitleBar控件属性 -->
+    <declare-styleable name="titleBar">
+
+        <!-- 标题文案 -->
+        <attr name="titleText" format="string|reference" />
+        <!-- 通用按钮文案 -->
+        <attr name="genericButtonText" format="string|reference" />
+        <!-- 左边按钮文案 ，showSwitch需要为true -->
+        <attr name="leftText" format="string|reference" />
+        <!-- 右边按钮文案 ，showSwitch需要为true -->
+        <attr name="rightText" format="string|reference" />
+        <!-- 是否显示两个按钮 -->
+        <attr name="showSwitch" format="boolean" />
+        <!-- 是否显示通用按钮 -->
+        <attr name="showGenericButton" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="checkcode_sender">
+        <attr name="showInputBox" format="boolean" />
+    </declare-styleable>
+
+    <!-- 通用CheckBox控件属性 -->
+    <declare-styleable name="checkboxWithLinkText">
+
+        <!-- CheckBox文本 -->
+        <attr name="checkBoxText" format="string|reference"></attr>
+        <!-- 链接显示文本 -->
+        <attr name="linkText" format="string|reference"></attr>
+    </declare-styleable>
+
+    <!-- used to set the minTextSize via xml -->
+    <attr name="autoScaleTextViewStyle" format="reference" />
+    <declare-styleable name="AutoScaleTextView">
+        <attr name="minTextSize" format="dimension" />
+    </declare-styleable>
+
+</resources>

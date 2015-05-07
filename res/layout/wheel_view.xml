@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cw_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/textlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlelayout"
+        android:background="@color/blue"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/step_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_400"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/titlelayout"
+        android:orientation="vertical" >
+
+        <com.global.wheel.WheelView
+            android:id="@+id/step_big_debug"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_150"
+            android:layout_gravity="center"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="right"
+            android:nextFocusDown="@+id/step_big_debug"
+            android:nextFocusUp="@+id/step_big_debug" />
+
+        <com.global.wheel.WheelView
+            android:id="@+id/step_small_debug"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_150"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_20"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="right"
+            android:nextFocusDown="@+id/step_small_debug"
+            android:nextFocusUp="@+id/step_small_debug" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/bottomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@color/cw_bg"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </FrameLayout>
+
+</LinearLayout>

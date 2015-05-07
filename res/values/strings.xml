@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">zhuilu_lib_base</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="framework_release_refresh">释放即可刷新</string>
+    <string name="framework_pull_refresh">下拉刷新</string>
+    <string name="framework_refresh_loading">加载中</string>
+    <string name="confirm">确定</string>
+    <string name="mobile_checkCode">短信校验码</string>
+    <string name="rightCheckCode">右侧校验码</string>
+    <string name="menu_settings">右侧校验码</string>
+    <string name="sendCheckCode">发送验证码</string>
+    <string name="resendCheckCode">"      重发      "</string>
+    <string name="timeAfter">$s$秒后重发</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <!-- useragent是为厂商内置而做的标记，如果是内置请填入厂商的英文名称 -->
+    <string name="useragent">""</string>
+    <!-- 运营相关 -->
+    <string name="channels"></string>
+    <string name="warnning">提醒</string>
+    <string name="time_update">上次更新%s</string>
+    <string name="error_data">数据格式错误</string>
+    <string name="err_debug_step_fragment">为找到对应模块</string>
+    <string name="title_activity_auto_scale_text_view">Auto Scale TextView Demo</string>
+    <string name="cupcake">Cupcake</string>
+    <string name="donut">Donut</string>
+    <string name="eclair">Eclair</string>
+    <string name="froyo">Froyo</string>
+    <string name="gingerbread">Gingerbread</string>
+    <string name="honeycomb">Honeycomb</string>
+    <string name="ics">Ice Cream Sandwich</string>
+    <string name="jellybean">Jelly Bean</string>
+
+</resources>

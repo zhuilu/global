@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="backgroudColor">#F3F3F3</color>
+    <color name="colorBlack">#333333</color>
+    <color name="colorGray">#666666</color>
+    <color name="colorccc">#cccccc</color>
+    <color name="colorLightGray">#999999</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorOrange">#ff7700</color>
+    <color name="colorGreen">#449900</color>
+    <color name="colorBlue">#2277bb</color>
+    <color name="colorDarkBlue">#385487</color>
+    <color name="menu_pre_color">#FF666C6F</color>
+    <color name="menu_text_color">#FF1A1A1A</color>
+    <color name="color_gray_369">#336699</color>
+    <color name="list_select_color">#ddf3ff</color>
+    <color name="traveUserGuideBgColor">#2D2D2D</color>
+    <color name="pull_background">#232a2f</color>
+    <color name="pull_refresh_bgcolor">#e8e8e8 </color>
+    <color name="black">#000000</color>
+    <color name="login_title_background">#00BC88</color>
+    <color name="debug_red_bg">#FF797B</color>
+    <color name="debug_ready_bg">#1DCF77</color>
+    <color name="debug_debug_bg">#D8D43D</color>
+    <color name="debug_search_bg">#18D5DB</color>
+    <color name="debug_manager_bg">#019B79</color>
+    <color name="debug_blue_bg">#034F8B</color>
+    <color name="debug_detail_top_bg">#69725C</color>
+    <color name="debug_detail_bg">#65BA70</color>
+    <color name="debug_detail_edittext_bg">#C0C0C0</color>
+    <color name="query_detail_first_bg">#69725C</color>
+    <color name="query_detail_second_bg">#C0C0C0</color>
+    <color name="dark_blue">#024EA4</color>
+    <color name="blue">#0E89E6</color>
+    <color name="red">#FF3366</color>
+    <color name="light_blue">#2BB0F1</color>
+    <color name="white">#ffffff</color>
+    <color name="purple">#333366</color>
+    <color name="transparent">#00000000</color>
+    <color name="light_yellow">#FFFFCC</color>
+    <color name="cw_bg">#E5F0FA</color>
+    <color name="brown_dark">#33999999</color>
+    <color name="color_c51e3b">#c51e3b</color>
+    <color name="color_8c1024">#8c1024</color>
+    <color name="drak_gray">#333333</color>
+    <color name="gray">#D1CAB5</color>
+    <color name="bg_blue">#073A6B</color>
+    <!-- Debug -->
+    <color name="debug_tx_color">#2D2D35</color>
+    <color name="debug_detail_tx_selected">#fefb24</color>
+
+    <!-- search -->
+    <color name="title_dark_blue">#024EA4</color>
+    <color name="background_blue_color">#06734F</color>
+    <color name="background_light_blue">#BBF4FA</color>
+    <color name="img_blue_color">#179168</color>
+    <color name="red_light">#ffff4444</color>
+    <color name="green_light">#ff99cc00</color>
+    <color name="orange_light">#ffffbb33</color>
+    <color name="blue_light">#ff33b5e5</color>
+    <color name="light_green">#AFE45E</color>
+    <color name="green">#10854B</color>
+    <color name="dark_green">#339966</color>
+    <!-- Debug -->
+
+
+    <!-- search -->
+    <color name="title_dark_green">#013B1E</color>
+    <color name="background_green_color">#06734F</color>
+    <color name="img_green_color">#179168</color>
+
+</resources>

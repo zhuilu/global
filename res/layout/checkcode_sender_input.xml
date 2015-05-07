@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/checkCodeSendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/checkCodeSendInputBox"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/checkCodeSendInputBox"
+        android:layout_centerVertical="true"
+        android:background="@drawable/input_matched_btn"
+        android:text="string/sendCheckCode"
+        android:textSize="16sp" />
+
+    <com.global.component.GenericInputBox
+        android:id="@+id/checkCodeSendInputBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@id/checkCodeSendButton" />
+
+</RelativeLayout>

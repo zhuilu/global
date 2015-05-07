@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="bjgy">
+        <item>DLT645_2007</item>
+        <item>DLT645_1997</item>
+    </string-array>
+    <string-array name="portSelect">
+        <item>485(1)</item>
+        <item>485(2)</item>
+        <item>载波</item>
+    </string-array>
+    <string-array name="dw">
+        <item>30秒</item>
+        <item>60秒</item>
+        <item>90秒</item>
+    </string-array>
+    <string-array name="baudrate">
+        <item>1200</item>
+        <item>2400</item>
+        <item>800</item>
+        <item>9600</item>
+    </string-array>
+    <string-array name="parity">
+        <item>2</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="types">
+        <item>type</item>
+        <item>time</item>
+        <item>word</item>
+    </string-array>
+    <string-array name="type">
+        <item>big categories</item>
+        <item>small categories</item>
+    </string-array>
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
+</resources>

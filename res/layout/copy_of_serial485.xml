@@ -1,0 +1,230 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <CheckBox
+            android:id="@+id/type_bluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/baudRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:entries="@array/baudrate" />
+
+        <Spinner
+            android:id="@+id/parity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:entries="@array/parity" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left" >
+
+        <TextView
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:text="逻辑地址：" />
+
+        <EditText
+            android:id="@+id/id_edittext_ljdz"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="wrap_content"
+            android:text="91742049" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left" >
+
+        <TextView
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:text="IP：" />
+
+        <EditText
+            android:id="@+id/id_edittext_ip"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="wrap_content"
+            android:text="123.45.6.78" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left" >
+
+        <TextView
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:text="端口：" />
+
+        <EditText
+            android:id="@+id/id_edittext_port"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="wrap_content"
+            android:text="9010" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left" >
+
+        <TextView
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:text="APN：" />
+
+        <EditText
+            android:id="@+id/id_edittext_apn"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="wrap_content"
+            android:text="ZJDL.ZJ" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/buttonOpen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="打开串口" />
+
+            <Button
+                android:id="@+id/buttonClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关闭串口" />
+
+            <Button
+                android:id="@+id/buttonSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="发送485全A测试" />
+
+            <Button
+                android:id="@+id/buttonZaiboSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="发送电表485测试" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_margin="@dimen/dp_10"
+                android:background="@color/background_green_color" />
+
+            <Button
+                android:id="@+id/buttonZaiboSendTest_JZ_A1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="打开集中器测试" />
+
+            <Button
+                android:id="@+id/buttonZaiboSend_jzq_infra_zhongjireadAdress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="验证采集器_给集中器发送红外中继读表" />
+
+            <Button
+                android:id="@+id/buttonZaiboSend_jzq_infra_serial_readbj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="验证采集器_给集中器发送红外_监听串口读表" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_margin="@dimen/dp_10"
+                android:background="@color/background_green_color" />
+
+            <Button
+                android:id="@+id/buttonZaiboSendTest_cjA1_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="发送载波测试cjA1_02" />
+
+            <Button
+                android:id="@+id/buttonZaiboReadTimeTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="发送载波读取表计时钟" />
+
+            <Button
+                android:id="@+id/buttonZaiboSendWifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="发送载波验证无线信号" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_margin="@dimen/dp_10"
+                android:background="@color/background_green_color" />
+
+            <Button
+                android:id="@+id/buttonZaiboSend_CaijiA1_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="发送载波验证采集器_CJ_A1_01" />
+
+            <Button
+                android:id="@+id/buttonZaiboSend_CaijiA3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="发送载波验证采集器_CJ_A3_关闭" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textViewRev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+</LinearLayout>

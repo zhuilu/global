@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/checkCodeGetContainer"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/checkCodeInputBox"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/checkCodeInputBox"
+        android:layout_centerVertical="true"
+        android:background="@drawable/input_btn_normal_bg" >
+
+        <ImageView
+            android:id="@+id/refreshImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/refresh_ani" />
+
+        <ImageView
+            android:id="@+id/checkCodeImg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/refreshImg"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <com.global.component.GenericInputBox
+        android:id="@+id/checkCodeInputBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/checkCodeGetContainer"
+        android:addStatesFromChildren="true" />
+
+</merge>

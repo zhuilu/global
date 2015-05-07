@@ -1,0 +1,362 @@
+<resources>
+
+    <!-- Use the device default light theme to activate the StatusBar on API 11+ devices -->
+    <style name="AppTheme" parent="android:Theme.DeviceDefault.Light">
+        <item name="com.global:autoScaleTextViewStyle">@style/autoScaleTextView</item>
+    </style>
+
+    <!-- Standard configuration for the AutoScaleTextView -->
+    <style name="autoScaleTextView">
+
+        <!-- some graphical improvements just for the demo. feel free to remove -->
+        <item name="@android:attr/background">@drawable/border</item>
+        <item name="@android:attr/padding">5dp</item>
+        <item name="@android:attr/gravity">center</item>
+
+        <!-- use the next line to alter the minimum text size (uncomment first) -->
+        <!-- <item name="@attr/minTextSize">10dp</item> -->
+    </style>
+
+    <style name="framework_pullrefresh_overview">
+        <item name="framework_pullrefresh_indicator_upDrawable">@drawable/framework_pull_arrow_up</item>
+        <item name="framework_pullrefresh_indicator_downDrawable">@drawable/framework_pull_arrow_down</item>
+        <item name="framework_pullrefresh_progressDrawable">@null</item>
+        <item name="framework_pullrefresh_textColor">@android:color/secondary_text_light</item>
+    </style>
+
+    <!-- <style name="menu_in_out" parent="android:Animation"> -->
+    <!-- <item name="android:windowEnterAnimation">@anim/menu_popup_in</item> -->
+    <!-- <item name="android:windowExitAnimation">@anim/menu_popup_out</item> -->
+    <!-- </style> -->
+
+    <style name="AnimationFade">
+
+        <!-- PopupWindow左右弹出的效果 -->
+        <item name="android:windowEnterAnimation">@anim/in_bottom2top</item>
+        <item name="android:windowExitAnimation">@anim/out_top2bottom</item>
+    </style>
+    <!-- 应用背景 -->
+    <style name="client_application_bg">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@color/backgroudColor</item>
+    </style>
+    <!-- 主按钮 -->
+    <style name="mainButtonStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:textSize">18.7sp</item>
+        <item name="android:textColor">@drawable/main_button_color</item>
+        <item name="android:background">@drawable/main_button</item>
+    </style>
+
+    <!-- 次按钮 -->
+    <style name="subButtonStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:textSize">18.7sp</item>
+        <item name="android:textColor">@drawable/sub_button_color</item>
+        <item name="android:background">@drawable/sub_button</item>
+    </style>
+    <!-- 次次按钮 -->
+    <style name="subSubButtonStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:textSize">18.7sp</item>
+        <item name="android:textColor">@drawable/subsub_btn_color</item>
+        <item name="android:background">@drawable/sub_button_sub</item>
+    </style>
+
+    <!-- 文本样式  16px -->
+    <style name="text_16">
+        <item name="android:textSize">10.7sp</item>
+    </style>
+
+    <style name="text_dark_gray_16" parent="text_16">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="text_gray_16" parent="text_16">
+        <item name="android:textColor">@color/colorGray</item>
+    </style>
+
+    <style name="text_light_gray_16" parent="text_16">
+        <item name="android:textColor">@color/colorLightGray</item>
+    </style>
+
+    <style name="text_orange_16" parent="text_16">
+        <item name="android:textColor">@color/colorOrange</item>
+    </style>
+
+    <style name="text_green_16" parent="text_16">
+        <item name="android:textColor">@color/colorGreen</item>
+    </style>
+
+    <style name="text_blue_16" parent="text_16">
+        <item name="android:textColor">@color/colorBlue</item>
+    </style>
+
+    <style name="text_dark_blue_16" parent="text_16">
+        <item name="android:textColor">@color/colorDarkBlue</item>
+    </style>
+
+    <!-- 文本样式  18px -->
+    <style name="text_18">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="text_dark_gray_18" parent="text_18">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="text_gray_18" parent="text_18">
+        <item name="android:textColor">@color/colorGray</item>
+    </style>
+
+    <style name="text_light_gray_18" parent="text_18">
+        <item name="android:textColor">@color/colorLightGray</item>
+    </style>
+
+    <style name="text_orange_18" parent="text_18">
+        <item name="android:textColor">@color/colorOrange</item>
+    </style>
+
+    <style name="text_green_18" parent="text_18">
+        <item name="android:textColor">@color/colorGreen</item>
+    </style>
+
+    <style name="text_dark_blue_18" parent="text_18">
+        <item name="android:textColor">@color/colorDarkBlue</item>
+    </style>
+
+    <!-- 文本样式  20px -->
+    <style name="text_20">
+        <item name="android:textSize">13.3sp</item>
+    </style>
+
+    <style name="text_dark_gray_20" parent="text_20">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="text_gray_20" parent="text_20">
+        <item name="android:textColor">@color/colorGray</item>
+    </style>
+
+    <style name="text_light_gray_20" parent="text_20">
+        <item name="android:textColor">@color/colorLightGray</item>
+    </style>
+
+    <style name="text_orange_20" parent="text_20">
+        <item name="android:textColor">@color/colorOrange</item>
+    </style>
+
+    <style name="text_green_20" parent="text_20">
+        <item name="android:textColor">@color/colorGreen</item>
+    </style>
+
+    <style name="text_blue_20" parent="text_20">
+        <item name="android:textColor">@color/colorBlue</item>
+    </style>
+
+    <style name="text_dark_blue_20" parent="text_20">
+        <item name="android:textColor">@color/colorDarkBlue</item>
+    </style>
+
+    <!-- 文本样式  22px -->
+    <style name="text_22">
+        <item name="android:textSize">14.7sp</item>
+    </style>
+
+    <style name="text_dark_gray_22" parent="text_22">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="text_gray_22" parent="text_22">
+        <item name="android:textColor">@color/colorGray</item>
+    </style>
+
+    <style name="text_light_gray_22" parent="text_22">
+        <item name="android:textColor">@color/colorLightGray</item>
+    </style>
+
+    <style name="text_orange_22" parent="text_22">
+        <item name="android:textColor">@color/colorOrange</item>
+    </style>
+
+    <style name="text_green_22" parent="text_22">
+        <item name="android:textColor">@color/colorGreen</item>
+    </style>
+
+    <style name="text_dark_blue_22" parent="text_22">
+        <item name="android:textColor">@color/colorDarkBlue</item>
+    </style>
+
+    <!-- 文本样式  24px -->
+    <style name="text_24">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="text_dark_gray_24" parent="text_24">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="text_gray_24" parent="text_24">
+        <item name="android:textColor">@color/colorGray</item>
+    </style>
+
+    <style name="text_light_gray_24" parent="text_24">
+        <item name="android:textColor">@color/colorLightGray</item>
+    </style>
+
+    <style name="text_orange_24" parent="text_24">
+        <item name="android:textColor">@color/colorOrange</item>
+    </style>
+
+    <style name="text_green_24" parent="text_24">
+        <item name="android:textColor">@color/colorGreen</item>
+    </style>
+
+    <style name="text_blue_24" parent="text_24">
+        <item name="android:textColor">@color/colorDarkBlue</item>
+    </style>
+
+    <style name="text_dark_blue_24" parent="text_24">
+        <item name="android:textColor">@color/colorDarkBlue</item>
+    </style>
+
+    <!-- 文本样式  26px -->
+    <style name="text_26">
+        <item name="android:textSize">17.3sp</item>
+    </style>
+
+    <style name="text_dark_gray_26" parent="text_26">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="text_gray_26" parent="text_26">
+        <item name="android:textColor">@color/colorGray</item>
+    </style>
+
+    <style name="text_light_gray_26" parent="text_26">
+        <item name="android:textColor">@color/colorLightGray</item>
+    </style>
+
+    <style name="text_orange_26" parent="text_26">
+        <item name="android:textColor">@color/colorOrange</item>
+    </style>
+
+    <style name="text_green_26" parent="text_26">
+        <item name="android:textColor">@color/colorGreen</item>
+    </style>
+
+    <style name="text_blue_26" parent="text_26">
+        <item name="android:textColor">@color/colorBlue</item>
+    </style>
+
+    <style name="text_dark_blue_26" parent="text_26">
+        <item name="android:textColor">@color/colorDarkBlue</item>
+    </style>
+
+    <!-- 文本样式  28px -->
+    <style name="text_28">
+        <item name="android:textSize">18.7sp</item>
+    </style>
+
+    <style name="text_dark_gray_28" parent="text_28">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="text_gray_28" parent="text_28">
+        <item name="android:textColor">@color/colorGray</item>
+    </style>
+
+    <style name="text_light_gray_28" parent="text_28">
+        <item name="android:textColor">@color/colorLightGray</item>
+    </style>
+
+    <style name="text_orange_28" parent="text_28">
+        <item name="android:textColor">@color/colorOrange</item>
+    </style>
+
+    <style name="text_green_28" parent="text_28">
+        <item name="android:textColor">@color/colorGreen</item>
+    </style>
+
+    <style name="text_blue_28" parent="text_28">
+        <item name="android:textColor">@color/colorBlue</item>
+    </style>
+
+    <style name="text_dark_blue_28" parent="text_28">
+        <item name="android:textColor">@color/colorDarkBlue</item>
+    </style>
+
+    <style name="text_white_28" parent="text_28">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <!-- 文本样式  30px -->
+    <style name="text_30">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="text_dark_gray_30" parent="text_30">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="text_gray_30" parent="text_30">
+        <item name="android:textColor">@color/colorGray</item>
+    </style>
+
+    <style name="text_light_gray_30" parent="text_30">
+        <item name="android:textColor">@color/colorLightGray</item>
+    </style>
+
+    <style name="text_orange_30" parent="text_30">
+        <item name="android:textColor">@color/colorOrange</item>
+    </style>
+
+    <style name="text_green_30" parent="text_30">
+        <item name="android:textColor">@color/colorGreen</item>
+    </style>
+
+    <style name="text_blue_30" parent="text_30">
+        <item name="android:textColor">@color/colorBlue</item>
+    </style>
+
+    <style name="text_dark_blue_30" parent="text_30">
+        <item name="android:textColor">@color/colorDarkBlue</item>
+    </style>
+
+    <!-- button统一样式 -->
+    <style name="simple_button_style" parent="text_light_gray_24">
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+    </style>
+
+    <!-- titleBar 按钮样式 -->
+    <style name="titlebar_button_style" parent="simple_button_style">
+        <item name="android:background">@drawable/titlebar_button</item>
+    </style>
+
+    <!-- 切换按钮左半部分 -->
+    <style name="switch_btn_left_style" parent="simple_button_style">
+        <item name="android:background">@drawable/switch_left_button</item>
+    </style>
+    <!-- 切换按钮右半部分 -->
+    <style name="switch_btn_right_style" parent="simple_button_style">
+        <item name="android:background">@drawable/switch_right_button</item>
+    </style>
+
+    <style name="boldStyle">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

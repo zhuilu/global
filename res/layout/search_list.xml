@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/titleContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_list_title_bg"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/confirmText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/input_edittext"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/input_edittext"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/input_matched_btn"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="string/confirm"
+            android:textSize="16sp" />
+
+        <com.global.component.GenericInputBox
+            android:id="@+id/input_edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@id/confirmText"
+            android:addStatesFromChildren="true"
+             />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/dataList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/titleContainer"
+        android:cacheColorHint="@android:color/transparent" />
+
+    <LinearLayout
+        android:id="@+id/empty_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleContainer"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/empty_text_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:gravity="center"
+            android:padding="13dp"
+            android:textColor="#FF808080"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>
