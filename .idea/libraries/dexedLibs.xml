@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="dexedLibs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/android-support-v7-appcompat-12f6db5836ca0a669998baf318029fb9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/niftynotification-1.0-037aa11202782e59aabe5ddeba9f0578.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/android-support-v4-07e07858ff5d3c16fcdd9035f2145c6e.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/httpmime-4.1.1-7284099bcf5aea2ab310d16f9e60ae11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/ksoap2-android-assembly-2.5.4-jar-with-dependencies-b5172bc21bfc0e5324920007f6f77c7a.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/universal-image-loader-1.9.3-ab82bdd80cf5f576685a198121df988c.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

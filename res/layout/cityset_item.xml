@@ -12,7 +12,6 @@
         android:layout_height="@dimen/dp_50"
         android:layout_gravity="center_vertical"
         android:focusable="false"
-        android:fontFamily=""
         android:gravity="center"
         android:includeFontPadding="false"
         android:textColor="@android:color/white"
