@@ -10,7 +10,7 @@ import java.util.GregorianCalendar;
 
 /**
  * 
- * @author luxiaochung
+ * @author dai.sl  
  */
 public class BcdUtils {
 
