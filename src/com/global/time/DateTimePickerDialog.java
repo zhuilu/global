@@ -20,7 +20,7 @@ import com.global.R;
 /**
  * 日期时间选择控件
  * 
- * @author 大漠
+ * @author dai.sl
  */
 public class DateTimePickerDialog implements OnDateChangedListener,
 		OnTimeChangedListener {

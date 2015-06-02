@@ -36,6 +36,8 @@ public class DBInitData {
 				"0", "NativeMenuFragment").toContentValues());
 		db.insert(DbHelper.TABLE_NodeStep, null, new Node("203", "200",
 				"载波调试OLD", "0", "CopyOfSerial485Fragment").toContentValues());
+		db.insert(DbHelper.TABLE_NodeStep, null, new Node("204", "200",
+				"动画", "0", "AnimFragment").toContentValues());
 		db.setTransactionSuccessful();
 		db.endTransaction();
 	}
